@@ -1,3 +1,50 @@
 body {
-    background: url("../images/background-transparent.webp") no-repeat center center fixed;
+    background: url("../images/background.webp") no-repeat center center fixed;
 }
+
+/* Page header */
+#header-container {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin-inline: 10%;
+    margin-top: 3%;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1px;
+    color: #0F574B;
+}
+
+/*Media query: tablets (768) */
+@media screen and (min-width:768px) {
+
+/* Page Header */
+#header-container {
+margin-top: 27%;
+}
+
+}
+
+/*media query: laptop screens (1024)*/
+@media screen and (min-width: 1024px) {
+
+/* Page Header */
+#header-container {
+    margin-left: 66%;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+}
+
+/* media query: larger laptop screens (1440) */
+@media screen and (min-width: 1440px) {
+
+    /* Page Header  */
+    #header-container {
+        margin-left: 62%;
+        margin-right: 6%;
+        margin-top: 6%;
+    }
+
+ }
