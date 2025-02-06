@@ -54,7 +54,7 @@ p.result {
 }
 
 img {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   height: auto;
 }
@@ -109,8 +109,13 @@ button {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 80px;
   }
+
+  button {
+    margin-top: 80px;
+  }
+
 }
 
 /* media query: larger laptop screens (1440) */
@@ -129,6 +134,10 @@ button {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 100px;
+  }
+
+  button {
+    margin-top: 125px;
   }
 }
