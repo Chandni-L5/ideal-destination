@@ -2,7 +2,7 @@
 :root {
   --heading-color: #0f574b;
   --text-color: #002444;
-  --button-color: deeppink;
+  --button-color: #083530 ;
 }
 
 /* Index.html */
@@ -71,6 +71,11 @@ button {
   margin-right: auto;
   cursor: pointer;
   font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
 }
 
 /*Media query: tablets (768) */
