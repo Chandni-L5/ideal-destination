@@ -1,50 +1,134 @@
-body {
-    background: url("../images/background.webp") no-repeat center center fixed;
+/* CSS Variables */
+:root {
+  --heading-color: #0f574b;
+  --text-color: #002444;
+  --button-color: deeppink;
+}
+
+/* Index.html */
+body#home {
+  background: url("../images/background.webp") no-repeat center center fixed;
 }
 
 /* Page header */
 #header-container {
-    background-color: white;
-    opacity: 0.9;
-    border-radius: 20px;
-    margin-inline: 10%;
-    margin-top: 3%;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 1px;
-    color: #0F574B;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  margin-inline: 10%;
+  margin-top: 3%;
+  text-align: center;
+  padding: 1px;
+  color: var(--heading-color);
+}
+
+/* Question box */
+#question-container {
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  margin-inline: 10%;
+  margin-top: 10%;
+  text-align: center;
+  padding: 100px 5px 100px 5px;
+  color: var(--text-color);
+  font-size: 150%;
+}
+
+/* Result pages */
+body {
+  background-color: mistyrose;
+  font-family: sans-serif;
+}
+
+h1.result {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 200%;
+}
+
+p.result {
+  color: var(--text-color);
+  text-align: center;
+  padding-inline: 10%;
+}
+
+img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-size: xx-large;
 }
 
 /*Media query: tablets (768) */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  /* Index.html */
 
-/* Page Header */
-#header-container {
-margin-top: 27%;
-}
+  /* Page Header */
+  #header-container {
+    margin-top: 27%;
+  }
 
+  /* Results pages */
+  img {
+    width: 75%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*media query: laptop screens (1024)*/
 @media screen and (min-width: 1024px) {
+  /* Index.html */
 
-/* Page Header */
-#header-container {
+  /* Page Header */
+  #header-container {
     margin-left: 66%;
     margin-right: 3%;
     margin-top: 3%;
-}
+  }
 
+  /* Result pages */
+
+  .img-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+  }
 }
 
 /* media query: larger laptop screens (1440) */
 @media screen and (min-width: 1440px) {
+  /* Index.html */
 
-    /* Page Header  */
-    #header-container {
-        margin-left: 62%;
-        margin-right: 6%;
-        margin-top: 6%;
-    }
+  /* Page Header  */
+  #header-container {
+    margin-left: 62%;
+    margin-right: 6%;
+    margin-top: 6%;
+  }
 
- }
+  /* Result pages */
+  .img-container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+  }
+}
