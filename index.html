@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Metatags for SEO-->
-    <meta name="description" content="What's your ideal travel destination? Complete the quiz to find out!"/>
-    <meta name="keywords" content="travel, destination, quiz, ideal, vacation"/>
+    <meta
+      name="description"
+      content="What's your ideal travel destination? Complete the quiz to find out!"
+    />
+    <meta
+      name="keywords"
+      content="travel, destination, quiz, ideal, vacation"
+    />
 
     <!--Website title-->
     <title>Ideal Destinations | Home</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
-        <!-- custom css -->
-        <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body id="home">
@@ -27,21 +47,46 @@
       </div>
     </header>
     <section>
-      <div id="question-container">
+      <div class="container">
         <p>
           Welcome to the quiz! Answer the following questions to find out your
           ideal travel destination.
         </p>
       </div>
+      <!-- Question -->
+      <div class="container">
+        <div id="question" class="question"></div>
+        <!-- Radio buttons for answer -->
+        <label class="option">
+          <input type="radio" name="option" value="1" />
+          <span class="option1"></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option" value="2" />
+          <span class="option2"></span>
+        </label>
+        <label class="option">
+          <input type="radio" name="option" value="3" />
+          <span class="option3"></span>
+        </label>
+        <!-- Navigation Buttons -->
+        <div class="navigation-button">
+          <button class="previous-button">Previous</button>
+          <button class="next-button">Next</button>
+        </div>
+      </div>
     </section>
     <section>
-      <button>Restart</button>
+      <button id="restart">Restart</button>
     </section>
 
-<!-- Font Awesome kit -->
-<script src="https://kit.fontawesome.com/79e37bf5f8.js" crossorigin="anonymous"></script>
- 
-<!-- Javascript-->
-<script src="assets/js/script.js"></script>
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/79e37bf5f8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript-->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -23,16 +23,15 @@ body#home {
 }
 
 /* Question box */
-#question-container {
+.container {
   background-color: white;
   opacity: 0.9;
   border-radius: 20px;
   margin-inline: 10%;
-  margin-top: 10%;
+  margin-top: 3%;
   text-align: center;
-  padding: 100px 5px 100px 5px;
+  padding: 20px 5px 20px 5px;
   color: var(--text-color);
-  font-size: 150%;
 }
 
 /* Result pages */
@@ -59,7 +58,19 @@ img {
   height: auto;
 }
 
-button {
+.navigation-button {
+  margin-top: 10px;
+}
+
+button.next-button, 
+button.previous-button {
+  background-color: var(--button-color);
+  color: white;
+  width: 67.87px;
+  height: 21.5px;
+}
+
+button#restart {
   background-color: var(--button-color);
   color: white;
   border: none;
