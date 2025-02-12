@@ -1,21 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* CSS Variables */
-:root {
-  --heading-color: #0f574b;
-  --text-color: #002444;
-  --button-color: #083530;
-  --font: 'Montserrat', sans-serif;
+/* Global */
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Index.html */
 body#home {
   background: url("../images/background.webp") no-repeat center center fixed;
-}
-
-body {
-  font-family: var(--font);
 }
 
 /* Page header */
@@ -27,7 +19,7 @@ body {
   margin-top: 3%;
   text-align: center;
   padding: 1px;
-  color: var(--heading-color);
+  color: #0f574b;
 }
 
 /* Question box */
@@ -39,7 +31,27 @@ body {
   margin-top: 3%;
   text-align: center;
   padding: 20px 5px 20px 5px;
-  color: var(--text-color);
+  color: #0f574b;
+}
+
+/* Multiple choice options */
+div .option-a,
+div .option-b, 
+div .option-c {
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #0f574b;
+  border-radius: 20px;
+  margin-inline: 10%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+div .option-a:hover,
+div .option-b:hover, 
+div .option-c:hover {
+  background-color: #a5f2e5;
+  border: 4px solid #0f574b;
 }
 
 /* Result pages */
@@ -48,7 +60,7 @@ body {
 }
 
 h1.result {
-  color: var(--heading-color);
+  color: #0f574b;
   text-align: center;
   font-size: 200%;
 }
@@ -65,30 +77,30 @@ img {
   height: auto;
 }
 
-.navigation-button {
+.submission {
   margin-top: 10px;
 }
 
-button.next-button, 
-button.previous-button {
-  background-color: var(--button-color);
+button.submit-button {
+  background-color: #0f574b;
   color: white;
-  width: 67.87px;
-  height: 21.5px;
+  width: 70px;
+  height: 25px;
 }
 
 button#restart {
-  background-color: var(--button-color);
+  background-color: #0f574b;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   display: flex;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  font-size: xx-large;
+  width: 85px;
+  height: 60px;
 }
 
 a {
@@ -138,7 +150,6 @@ a {
   button {
     margin-top: 80px;
   }
-
 }
 
 /* media query: larger laptop screens (1440) */
