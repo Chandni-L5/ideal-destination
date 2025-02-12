@@ -9,13 +9,15 @@ body {
   margin-top: 10px;
 }
 
-button#submit-button {
+button.submit-button {
   background-color: #0f574b;
   color: white;
   width: 70px;
   height: 35px;
   cursor: pointer;
   font-size:large;
+  transition: .5s;
+  /* pointer-events: none; */
 }
 
 button#restart {
@@ -31,9 +33,10 @@ button#restart {
   cursor: pointer;
   width: 85px;
   height: 60px;
+  transition: .5s;
 }
 
-button#submit-button:hover,
+button.submit-button:hover,
 button#restart:hover {
   background-color: #a5f2e5;
   color: #0f574b;
@@ -79,6 +82,7 @@ div .option-c {
   margin-inline: 10%;
   cursor: pointer;
   margin-top: 10px;
+  transition: .5s;
 }
 
 div .option-a:hover,
