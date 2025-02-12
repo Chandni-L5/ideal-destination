@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
 /* CSS Variables */
 :root {
   --heading-color: #0f574b;
   --text-color: #002444;
-  --button-color: #083530 ;
+  --button-color: #083530;
+  --font: 'Montserrat', sans-serif;
 }
 
 /* Index.html */
 body#home {
   background: url("../images/background.webp") no-repeat center center fixed;
+}
+
+body {
+  font-family: var(--font);
 }
 
 /* Page header */
@@ -37,7 +45,6 @@ body#home {
 /* Result pages */
 body {
   background-color: mistyrose;
-  font-family: sans-serif;
 }
 
 h1.result {
