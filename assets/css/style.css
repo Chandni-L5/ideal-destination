@@ -9,6 +9,18 @@ body {
   margin-top: 10px;
 }
 
+/* Buttons */
+
+button#start{
+  background-color: #0f574b;
+  color: white;
+  width: 70px;
+  height: 35px;
+  cursor: pointer;
+  font-size:large;
+  transition: .5s;
+}
+
 button.submit-button {
   background-color: #0f574b;
   color: white;
@@ -37,7 +49,8 @@ button#restart {
 }
 
 button.submit-button:hover,
-button#restart:hover {
+button#restart:hover, 
+button#start:hover {
   background-color: #a5f2e5;
   color: #0f574b;
 }
@@ -53,7 +66,7 @@ body#home {
   opacity: 0.9;
   border-radius: 20px;
   margin-inline: 10%;
-  margin-top: 3%;
+  margin-top: 50%;
   text-align: center;
   padding: 1px;
   color: #0f574b;
@@ -142,7 +155,7 @@ img {
   #header-container {
     margin-left: 66%;
     margin-right: 3%;
-    margin-top: 3%;
+    margin-top: 30%;
   }
 
   /* Result pages */
@@ -167,7 +180,7 @@ img {
   #header-container {
     margin-left: 62%;
     margin-right: 6%;
-    margin-top: 6%;
+    margin-top: 35%;
   }
 
   /* Result pages */
@@ -179,6 +192,6 @@ img {
   }
 
   button#restart {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
