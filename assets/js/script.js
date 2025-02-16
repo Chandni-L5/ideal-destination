@@ -91,11 +91,14 @@ const options = document.querySelector('#options')
 
 function loadQuestions(index) {
     const questionText = document.querySelector('.question-text')
+    console.log("quizQAndO:", quizQAndO);
+    console.log("Index:", index);
+    console.log("quizQAndO[index]:", quizQAndO[index]);
     questionText.textContent = `${quizQAndO[index].number}.${quizQAndO[index].question}`;
 
-    let optionText = `<div id="options"><div class="option-a"><span>${quizQAndO[index].option.a}</span></div>
-        <div class="option-b"><span>${quizQAndO[index].option.b}</span></div>
-        <div class="option-c"><span>${quizQAndO[index].option.c}</span></div>`;
+    let optionText = `<div id="options"><div data-option="option-a" class="option-style"><span>${quizQAndO[index].option.a}</span></div>
+        <div data-option="option-b" class="option-style"><span>${quizQAndO[index].option.b}</span></div>
+        <div data-option="option-c" class="option-style"><span>${quizQAndO[index].option.c}</span></div>`;
 
         options.innerHTML = optionText;
 }
@@ -105,5 +108,13 @@ nextButton.onclick = () => {
     quizBox.classList.add('active');
     questionCount++;
 
-    loadQuestions(questionCount);
+    // Changing next button to 'Finish' after the last question 
+if (questionCount === quizQAndO.length-1) {
+    nextButton.textContent = "Finish";
+} else {
+    nextButton.textContent = "Next";
 }
+loadQuestions(questionCount);
+}
+
+
