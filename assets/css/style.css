@@ -118,8 +118,7 @@ button#start:hover {
     padding: 20px 5px 20px 5px;
     color: #0f574b;
     pointer-events: none;
-    transform: scale(.9)
-    display: flex;
+    transform: scale(.9);
     justify-content: center;
     align-items: center;
     width: 50%;

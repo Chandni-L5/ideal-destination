@@ -106,16 +106,36 @@ function loadQuestions(index) {
     options.innerHTML = optionText;
 }
 
-nextButton.onclick = () => {
-    if (questionCount < quizQAndO.length - 1) {
-        questionCount++;
-        loadQuestions(questionCount);
-    }  
+let selectedOption = null;
+nextButton.disabled = true;
+options.addEventListener('click', function (event) {
+    const selected = event.target.closest('[data-option]');
+    if (!selected) return;
+    document.querySelectorAll('[data-option]').forEach(option => {
+        option.classList.remove('selected');
+    });
+    selected.classList.add('selected');
+    selectedOption = selected.dataset.option;
+    nextButton.disabled = false;
+});
 
-        // Changing next button to 'Finish' after the last question 
-        if (questionCount === quizQAndO.length - 1) {
-            nextButton.textContent = "Finish";
-        } else {
-            nextButton.textContent = "Next Question";
-        }
+// functionality to next button
+nextButton.onclick = () => {
+    if (selectedOption) {
+        questionCount++;
+
+    // Changing next button to 'Finish' after the last question 
+    if (questionCount === quizQAndO.length - 1) {
+        nextButton.textContent = "Finish";
+    } else {
+        nextButton.textContent = "Next Question";
     }
+
+    // load the next q+a set
+    loadQuestions(questionCount);
+
+    // disable next button until an option is selected
+    selectedOption = null;
+    nextButton.disabled = true;
+    }
+};
