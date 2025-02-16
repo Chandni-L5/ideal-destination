@@ -23,7 +23,7 @@ let quizQAndO = [{
         option: {
             a: "Jerk Chicken",
             b: "Sushi",
-            x: "Bbq Ribs"
+            c: "Bbq Ribs"
         }
     },
     {
@@ -83,38 +83,37 @@ startButton.onclick = () => {
     quizBox.classList.add('active')
 }
 
-// function to cycle questions from object
+// function to cycle questions and options from object
 let questionCount = 0;
 const nextButton = document.querySelector('#next');
 const options = document.querySelector('#options')
 
-
 function loadQuestions(index) {
     const questionText = document.querySelector('.question-text')
-    console.log("quizQAndO:", quizQAndO);
-    console.log("Index:", index);
-    console.log("quizQAndO[index]:", quizQAndO[index]);
     questionText.textContent = `${quizQAndO[index].number}.${quizQAndO[index].question}`;
 
-    let optionText = `<div id="options"><div data-option="option-a" class="option-style"><span>${quizQAndO[index].option.a}</span></div>
-        <div data-option="option-b" class="option-style"><span>${quizQAndO[index].option.b}</span></div>
-        <div data-option="option-c" class="option-style"><span>${quizQAndO[index].option.c}</span></div>`;
+    let optionText = `
+        <div id="options">
+            <div data-option="option-a" class="option-style"><span>${quizQAndO[index].option.a}</span></div>
+            <div data-option="option-b" class="option-style"><span>${quizQAndO[index].option.b}</span></div>
+            <div data-option="option-c" class="option-style"><span>${quizQAndO[index].option.c}</span></div>
+        </div>
+    `;
 
-        options.innerHTML = optionText;
+    const options = document.querySelector('#options')
+    options.innerHTML = optionText;
 }
 
 nextButton.onclick = () => {
-    quizSection.classList.add('active');
-    quizBox.classList.add('active');
-    questionCount++;
+    if (questionCount < quizQAndO.length - 1) {
+        questionCount++;
+        loadQuestions(questionCount);
+    }  
 
-    // Changing next button to 'Finish' after the last question 
-if (questionCount === quizQAndO.length-1) {
-    nextButton.textContent = "Finish";
-} else {
-    nextButton.textContent = "Next";
-}
-loadQuestions(questionCount);
-}
-
-
+        // Changing next button to 'Finish' after the last question 
+        if (questionCount === quizQAndO.length - 1) {
+            nextButton.textContent = "Finish";
+        } else {
+            nextButton.textContent = "Next";
+        }
+    }
