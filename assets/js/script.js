@@ -77,10 +77,12 @@ let quizQAndO = [{
 const startButton = document.querySelector('#start');
 const quizSection = document.querySelector('#quiz-section');
 const quizBox = document.querySelector('.quiz-box')
+const introSection = document.querySelector('#intro-section')
 
 startButton.onclick = () => {
     quizSection.classList.add('active');
-    quizBox.classList.add('active')
+    quizBox.classList.add('active');
+    introSection.style.display = "none";
 }
 
 // function to cycle questions and options from object
@@ -114,6 +116,6 @@ nextButton.onclick = () => {
         if (questionCount === quizQAndO.length - 1) {
             nextButton.textContent = "Finish";
         } else {
-            nextButton.textContent = "Next";
+            nextButton.textContent = "Next Question";
         }
     }
