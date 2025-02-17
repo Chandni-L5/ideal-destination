@@ -127,6 +127,7 @@ nextButton.onclick = () => {
     // Changing next button to 'Finish' after the last question 
     if (questionCount === quizQAndO.length - 1) {
         nextButton.textContent = "Finish";
+        document.getElementById("next").setAttribute("id","finish")
     } else {
         nextButton.textContent = "Next Question";
     }
@@ -139,3 +140,4 @@ nextButton.onclick = () => {
     nextButton.disabled = true;
     }
 };
+
