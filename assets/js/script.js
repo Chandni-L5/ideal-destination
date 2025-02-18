@@ -93,7 +93,7 @@ const options = document.querySelector('#options')
 function loadQuestions(index) {
     if (index < 0 || index>= quizQAndO.length) return; //stops the function when you reach the last question
 
-    const questionText = document.querySelector('.question-text')
+    const questionText = document.querySelector('#question-text')
     questionText.textContent = `${quizQAndO[index].number}.${quizQAndO[index].question}`;
 
     let optionText = `

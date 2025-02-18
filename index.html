@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Metatags for SEO-->
-    <meta
-      name="description"
-      content="What's your ideal travel destination? Complete the quiz to find out!"
-    />
-    <meta
-      name="keywords"
-      content="travel, destination, quiz, ideal, vacation"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Website title-->
-    <title>Ideal Destinations | Home</title>
+  <!--Metatags for SEO-->
+  <meta name="description" content="What's your ideal travel destination? Complete the quiz to find out!" />
+  <meta name="keywords" content="travel, destination, quiz, ideal, vacation" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+  <!--Website title-->
+  <title>Ideal Destinations | Home</title>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
 
-  <body>
-    <main id="main">
-      <div id="header-container">
-        <h1>What's your ideal travel destination?</h1>
-      </div>
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-      <div id="container">
+<body id="home">
+  <main id="main">
+    <div id="header-container">
+      <h1>What's your ideal travel destination?</h1>
+    </div>
+
+    <div id="container">
 
       <!-- Q+A section-->
-        <section id="quiz-section">
-          <div id="quiz-box">
-            <h2 class="question-text">1. What is your ideal type of holiday?</h2>
-          
-            <!--Multiple choice options-->
+      <section id="quiz-section">
+        <div id="quiz-box">
+          <h2 id="question-text">1. What is your ideal type of holiday?</h2>
+
+          <!--Multiple choice options-->
           <div id="options">
             <div data-option="option-a" class="option-style">
               <span>
@@ -65,38 +46,41 @@
                 Exploring a busy city and experiencing the culture
               </span>
             </div>
-            <div data-option="option-c" class="option-style"> 
+            <div data-option="option-c" class="option-style">
               <span>
                 Adventure and a unique experience
               </span>
             </div>
           </div>
-            <!-- next question button -->
+          <!-- next question button -->
           <div id="button-container">
             <button id="next">Next Question</button>
           </div>
-        </section>
+      </section>
 
-        <!-- Intro section-->
-        <section id="intro-section">
-          <div id="intro-container">
-            <p>
-              Welcome to the quiz! Answer the following questions to find out
-              your ideal travel destination.
-            </p>
-            <button id="start">Start</button>
-          </div>
-        </section>
-      </div>
-    </main>
+      <!-- Intro section-->
+      <section id="intro-section">
+        <div id="intro-container">
+          <p>
+            Welcome to the quiz! Answer the following questions to find out
+            your ideal travel destination.
+          </p>
+          <button id="start">Start</button>
+        </div>
+      </section>
 
-    <!-- Font Awesome kit -->
-    <script
-      src="https://kit.fontawesome.com/79e37bf5f8.js"
-      crossorigin="anonymous"
-    ></script>
+      <!-- restart button
+       <div>
+        <button id="restart">Restart</button>
+       </div> -->
+    </div>
+  </main>
 
-    <!-- Javascript-->
-    <script src="assets/js/script.js"></script>
-  </body>
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/79e37bf5f8.js" crossorigin="anonymous"></script>
+
+  <!-- Javascript-->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
