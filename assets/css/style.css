@@ -154,6 +154,11 @@ button#finish:hover {
   border: 4px solid #0f574b;
 }
 
+.option-style.selected:hover {
+  background-color: #a5f2e5;
+  border: 4px solid #0f574b;
+}
+
 button#next,
 button#finish {
   background-color: #0f574b;
@@ -240,6 +245,10 @@ a.result-restart {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+canvas {
+  height: 1px;
 }
 
 /*Media query: mobile (320) */
