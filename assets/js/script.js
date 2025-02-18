@@ -73,17 +73,17 @@ let quizQAndO = [{
     }
 ]
 
-// Start button 
 const startButton = document.querySelector('#start');
 const quizSection = document.querySelector('#quiz-section');
-const quizBox = document.querySelector('.quiz-box')
-const introSection = document.querySelector('#intro-section')
+const quizBox = document.querySelector('#quiz-box');
+const introSection = document.querySelector('#intro-section');
 
+// Start button 
 startButton.onclick = () => {
     quizSection.classList.add('active');
     quizBox.classList.add('active');
     introSection.style.display = "none";
-}
+};
 
 // function to cycle questions and options from object
 let questionCount = 0;
@@ -91,6 +91,8 @@ const nextButton = document.querySelector('#next');
 const options = document.querySelector('#options')
 
 function loadQuestions(index) {
+    if (index < 0 || index>= quizQAndO.length) return; //stops the function when you reach the last question
+
     const questionText = document.querySelector('.question-text')
     questionText.textContent = `${quizQAndO[index].number}.${quizQAndO[index].question}`;
 
@@ -104,19 +106,13 @@ function loadQuestions(index) {
 
     const options = document.querySelector('#options')
     options.innerHTML = optionText;
-}
+};
 
 let selectedOption = null;
 nextButton.disabled = true;
 options.addEventListener('click', function (event) {
     const selected = event.target.closest('[data-option]');
     if (!selected) return;
-    document.querySelectorAll('[data-option]').forEach(option => {
-        option.classList.remove('selected');
-    });
-    selected.classList.add('selected');
-    selectedOption = selected.dataset.option;
-    nextButton.disabled = false;
 });
 
 // functionality to next button
@@ -124,20 +120,80 @@ nextButton.onclick = () => {
     if (selectedOption) {
         questionCount++;
 
-    // Changing next button to 'Finish' after the last question 
-    if (questionCount === quizQAndO.length - 1) {
-        nextButton.textContent = "Finish";
-        document.getElementById("next").setAttribute("id","finish")
-    } else {
-        nextButton.textContent = "Next Question";
-    }
+        // Changing next button to 'Finish' after the last question 
+        if (questionCount === quizQAndO.length - 1) {
+            const buttonContainer = document.getElementById("button-container");
+            buttonContainer.innerHTML = ""; //removes the next button html
 
-    // load the next q+a set
-    loadQuestions(questionCount);
+            // replace the next button with the finish button
+            let finishButton = document.createElement("button"); 
+            finishButton.textContent = "Finish"
+            finishButton.id = "finish"
 
-    // disable next button until an option is selected
-    selectedOption = null;
-    nextButton.disabled = true;
+            //add new button
+            buttonContainer.appendChild(finishButton)
+
+            // add functionality to the finish button to redirect to the result.
+            finishButton.onclick = () => {
+                // calculate the option with highest count
+                let highestCount = Math.max(optionSelections.a, optionSelections.b, optionSelections.c);
+                let winners = [];
+            
+                if (optionSelections.a === highestCount) winners.push('a');
+                if (optionSelections.b === highestCount) winners.push('b');
+                if (optionSelections.c === highestCount) winners.push('c');
+            
+                let tieWinner = winners[Math.floor(Math.random() * winners.length)];
+            
+                // redirect to the result page 
+                if (tieWinner === 'a') {
+                    window.location.href = 'barbados.html' //option a
+                } else if (tieWinner === 'b') {
+                    window.location.href = 'japan.html' //option b
+                } else if (tieWinner === 'c') {
+                    window.location.href = 'kenya.html' //option c
+                }
+            };
+        } else {
+            nextButton.textContent = "Next Question";
+        }
+
+        // load the next q+a set
+        loadQuestions(questionCount);
+
+        // disable next button until an option is selected
+        selectedOption = null;
+        nextButton.disabled = true;
     }
 };
 
+// starting point for option count
+let optionSelections = {
+    a:0,
+    b:0,
+    c:0
+};
+
+const finishButton = document.querySelector('#finish');
+
+// update the optionSelections when a specific option is selected
+options.addEventListener('click', function (event) {
+    const selected = event.target.closest('[data-option');
+    if (!selected) return;
+
+    if (selected.dataset.option === 'option-a') {
+        optionSelections.a++;
+    } else if (selected.dataset.option === 'option-b') {
+        optionSelections.b++;
+    } else if (selected.dataset.option === 'option-c') {
+        optionSelections.c++;
+    }
+
+    // mark the option selected and enable the next button
+    document.querySelectorAll('[data-option]').forEach(option => {
+        option.classList.remove('selected');
+    });
+    selected.classList.add('selected');
+    selectedOption = selected.dataset.option;
+    nextButton.disabled = false;
+});

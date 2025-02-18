@@ -110,7 +110,7 @@ button#finish:hover {
   left: 0;
 }
 
-.quiz-box {
+#quiz-box {
   background-color: white;
     opacity: 0.9;
     border-radius: 20px;
@@ -125,7 +125,7 @@ button#finish:hover {
     width: 50%;
 }
 
-.quiz-box.active {
+#quiz-box.active {
   pointer-events: auto;
   transform: scale(1);
 }
@@ -175,7 +175,7 @@ h1 {
     font-size: xx-large;
   }
 
-  .quiz-box {
+  #quiz-box {
     width: 40%;
     margin-left: 76px;
     margin-top: 55px;
@@ -189,7 +189,7 @@ h1 {
     margin-inline: 55px;
   }
 
-  .quiz-box {
+  #quiz-box {
     width: 40%;
     margin-left: 105px;
     margin-top: 55px;
