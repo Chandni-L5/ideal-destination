@@ -19,6 +19,14 @@ p {
   font-size: 24px;
 }
 
+.hide {
+  display: none;
+}
+
+.hide.active {
+  display:none;
+}
+
 /* main index page styling */
 #main {
   min-height: 100vh;
@@ -56,10 +64,6 @@ h1 {
   align-items: center;
   font-size: x-large;
   margin-top: 175px;
-}
-
-.hide.active {
-  display: none;
 }
 
 #intro-container {

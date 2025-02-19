@@ -78,8 +78,16 @@ const quizSection = document.querySelector('#quiz-section');
 const quizBox = document.querySelector('#quiz-box');
 const introSection = document.querySelector('#intro-section');
 
+document.addEventListener("DOMContentLoaded", function() {
+    // hide intro section and display quiz section
+    introSection.classList.remove("hide");
+    quizSection.classList.add("hide");
+})
+
 // Start button 
 startButton.onclick = () => {
+    introSection.classList.add("hide")
+    quizSection.classList.remove("hide")
     quizSection.classList.add('active');
     quizBox.classList.add('active');
     introSection.style.display = "none";
