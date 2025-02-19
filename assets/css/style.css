@@ -15,9 +15,15 @@ body#home {
   background-size: cover;
 }
 
+p {
+  font-size: 24px;
+}
+
 /* main index page styling */
 #main {
   min-height: 100vh;
+  width: 100%;
+  padding: 10px;
 }
 
 /* Page header */
@@ -26,32 +32,30 @@ body#home {
   opacity: 0.9;
   border-radius: 20px;
   text-align: center;
-  padding: 1px;
+  padding: 5px;
   color: #0f574b;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  font-size: large;
-  margin-top: 6px;
-  margin-inline: 10px;
+  height: 150%;
+  margin-top: 3px;
+  margin-inline: auto;
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 30px;
 }
 
 /* Intro content */
 
 #intro-section {
   position: relative;
-  left: -50%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: x-large;
-  margin-top: -65px;
+  margin-top: 175px;
 }
 
 .hide.active {
@@ -69,6 +73,7 @@ h1 {
   padding: 20px 5px 20px 5px;
   color: #0f574b;
   text-align: center;
+  margin-inline: auto;
 }
 
 button#start {
@@ -77,7 +82,7 @@ button#start {
   width: 190px;
   height: 55px;
   cursor: pointer;
-  font-size: xx-large;
+  font-size: 30px;
   border-radius: 20px;
   transition: 0.5s;
   margin-top: 20px;
@@ -94,14 +99,11 @@ button#finish:hover {
 /* Q+A section */
 #container {
   display: flex;
-  height: 100vh;
-  width: 200%;
 }
 
 #quiz-section {
   position: relative;
   left: -50%;
-  /* left: 0; */
   width: 100%;
   z-index: 100;
   justify-content: center;
@@ -258,13 +260,42 @@ canvas {
 
 /* media query: ipad (768px) */
 @media screen and (min-width: 768px) {
+  /* intro section */
+  #header-container {
+    margin-top: 40px; 
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 25px;
+  }
 }
 
 /*media query: laptop screens (1024)*/
 @media screen and (min-width: 1024px) {
+
+  /* global */
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+
   /* index page */
   #header-container {
-    margin-inline: 55px;
+    margin-inline: auto;
+    width: 90%;
+    margin-top: 1px;
+  }
+
+  button#start {
+    font-size: 45px;
+    height: 62px;
   }
 
   #quiz-box {
@@ -295,6 +326,20 @@ canvas {
 
 /* media query: larger laptop screens (1440) */
 @media screen and (min-width: 1440px) {
+
+    /* global */
+    h1 {
+      font-size: 60px;
+    }
+  
+    p {
+      font-size: 45px;
+    }
+  
+    /* index page */
+    #header-container {
+      margin-top: 13px;
+    }
 
   a.result-restart {
     margin-top: 25px;
