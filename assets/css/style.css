@@ -24,7 +24,7 @@ p {
 }
 
 .hide.active {
-  display:none;
+  display: none;
 }
 
 /* main index page styling */
@@ -60,6 +60,7 @@ h1 {
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: x-large;
@@ -86,23 +87,16 @@ button#start {
   width: 190px;
   height: 55px;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 28px;
   border-radius: 20px;
   transition: 0.5s;
   margin-top: 20px;
 }
 
-button#next:hover,
-button#restart:hover,
-button#start:hover,
-button#finish:hover {
-  background-color: #a5f2e5;
-  color: #0f574b;
-}
-
 /* Q+A section */
 #container {
   display: flex;
+  flex-direction: column;
 }
 
 #quiz-section {
@@ -122,16 +116,14 @@ button#finish:hover {
   background-color: white;
   opacity: 0.9;
   border-radius: 20px;
-  margin-top: 55px;
+  margin-top: 15px;
   text-align: center;
   padding: 20px 5px 20px 5px;
   color: #0f574b;
   pointer-events: none;
   transform: scale(0.9);
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  margin-left: 30px;
+  width: 88%;
+  margin-inline: auto;
 }
 
 #quiz-box.active {
@@ -178,21 +170,45 @@ button#finish {
   border-radius: 20px;
 }
 
-button#restart {
-  background-color: #0f574b;
-  color: white;
-  width: 190px;
+a#intro-restart {
+  display: inline-block;
+  background-color: #fff;
+  color: #0f574b;
+  border: solid #0f574b 2px;
+  width: 125px;
   height: 55px;
   cursor: pointer;
-  font-size: xx-large;
+  font-size: 18px;
   border-radius: 20px;
   transition: 0.5s;
   margin-top: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-restart i {
+  margin-right: 5px;
+}
+
+.quiz-restart {
+  margin-inline: auto;
+}
+
+/* Button styles */
+button#next:hover,
+a#restart:hover,
+button#start:hover,
+button#finish:hover,
+a#intro-restart:hover {
+  background-color: #a5f2e5;
+  color: #0f574b;
 }
 
 /* Result pages */
 body {
-  background-color: #DCF3F4;
+  background-color: #dcf3f4;
 }
 
 h1.result {
@@ -253,20 +269,46 @@ a.result-restart {
   justify-content: center;
 }
 
+.result-restart i {
+  margin-right: 5px;
+}
+
 canvas {
   height: 1px;
 }
 
-/*Media query: mobile (320) */
-@media screen and (min-width: 320px) {
-
+button#restart {
+  background-color: #0f574b;
+  color: white;
+  width: 190px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin-top: 20px;
 }
+
+/*Media query: mobile (320) */
+@media screen and (min-width: 320px) {}
 
 /* media query: ipad (768px) */
 @media screen and (min-width: 768px) {
+
   /* intro section */
   #header-container {
-    margin-top: 40px; 
+    margin-top: 25px;
+  }
+
+  #quiz-box {
+    margin-top: 60px;
+    width: 70%;
+  }
+
+  a#intro-restart {
+    margin-top: 75px;
+    font-size: 30px;
+    width: 170px;
   }
 
   h1 {
@@ -303,13 +345,26 @@ canvas {
   }
 
   #quiz-box {
-    width: 40%;
-    margin-left: 105px;
-    margin-top: 55px;
+    width: 75%;
+    margin-inline: auto;
   }
 
   .option-style {
     margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 28px;
+  }
+
+  button#next {
+    font-size: 30px;
+    width: 200px;
+    height: 90px;
   }
 
   /* Result pages */
@@ -317,35 +372,43 @@ canvas {
     width: 100%;
   }
 
-.img-container > div {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-}
+  .img-container>div {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
 
   a.result-restart {
     margin-top: 30px;
+  }
+
+  p {
+    font-size: 20px;
   }
 }
 
 /* media query: larger laptop screens (1440) */
 @media screen and (min-width: 1440px) {
 
-    /* global */
-    h1 {
-      font-size: 60px;
-    }
-  
-    p {
-      font-size: 45px;
-    }
-  
-    /* index page */
-    #header-container {
-      margin-top: 13px;
-    }
+  /* global */
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #intro-container>p {
+    font-size: 45px;
+  }
+
+  /* index page */
+  #header-container {
+    margin-top: 13px;
+  }
 
   a.result-restart {
     margin-top: 25px;
-  } 
+  }
 }

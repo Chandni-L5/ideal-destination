@@ -77,11 +77,13 @@ const startButton = document.querySelector('#start');
 const quizSection = document.querySelector('#quiz-section');
 const quizBox = document.querySelector('#quiz-box');
 const introSection = document.querySelector('#intro-section');
+const restartButton = document.querySelector(".quiz-restart")
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // hide intro section and display quiz section
     introSection.classList.remove("hide");
     quizSection.classList.add("hide");
+    restartButton.classList.add("hide");
 })
 
 // Start button 
@@ -90,6 +92,7 @@ startButton.onclick = () => {
     quizSection.classList.remove("hide")
     quizSection.classList.add('active');
     quizBox.classList.add('active');
+    restartButton.classList.remove("hide")
     introSection.style.display = "none";
 };
 
@@ -99,7 +102,7 @@ const nextButton = document.querySelector('#next');
 const options = document.querySelector('#options')
 
 function loadQuestions(index) {
-    if (index < 0 || index>= quizQAndO.length) return; //stops the function when you reach the last question
+    if (index < 0 || index >= quizQAndO.length) return; //stops the function when you reach the last question
 
     const questionText = document.querySelector('#question-text')
     questionText.textContent = `${quizQAndO[index].number}.${quizQAndO[index].question}`;
@@ -134,7 +137,7 @@ nextButton.onclick = () => {
             buttonContainer.innerHTML = ""; //removes the next button html
 
             // replace the next button with the finish button
-            let finishButton = document.createElement("button"); 
+            let finishButton = document.createElement("button");
             finishButton.textContent = "Finish"
             finishButton.id = "finish"
 
@@ -146,13 +149,13 @@ nextButton.onclick = () => {
                 // calculate the option with highest count
                 let highestCount = Math.max(optionSelections.a, optionSelections.b, optionSelections.c);
                 let winners = [];
-            
+
                 if (optionSelections.a === highestCount) winners.push('a');
                 if (optionSelections.b === highestCount) winners.push('b');
                 if (optionSelections.c === highestCount) winners.push('c');
-            
+
                 let tieWinner = winners[Math.floor(Math.random() * winners.length)];
-            
+
                 // redirect to the result page 
                 if (tieWinner === 'a') {
                     window.location.href = 'barbados.html' //option a
@@ -177,9 +180,9 @@ nextButton.onclick = () => {
 
 // starting point for option count
 let optionSelections = {
-    a:0,
-    b:0,
-    c:0
+    a: 0,
+    b: 0,
+    c: 0
 };
 
 const finishButton = document.querySelector('#finish');
