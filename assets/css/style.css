@@ -149,7 +149,7 @@ button#finish:hover {
   border: 4px solid #0f574b;
 }
 
-.option-style:selected {
+.option-style.selected {
   background-color: #a5f2e5;
   border: 4px solid #0f574b;
 }
