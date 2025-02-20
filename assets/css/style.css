@@ -79,6 +79,7 @@ h1 {
   color: #0f574b;
   text-align: center;
   margin-inline: auto;
+  margin-top: -100px;
 }
 
 button#start {
@@ -289,15 +290,16 @@ button#restart {
   margin-top: 20px;
 }
 
-/*Media query: mobile (320) */
-@media screen and (min-width: 320px) {}
-
 /* media query: ipad (768px) */
 @media screen and (min-width: 768px) {
 
   /* intro section */
   #header-container {
     margin-top: 25px;
+  }
+
+  #intro-container {
+    margin-top: 150px;
   }
 
   #quiz-box {
@@ -312,11 +314,11 @@ button#restart {
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 50px;
   }
 
   p {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
@@ -325,11 +327,11 @@ button#restart {
 
   /* global */
   h1 {
-    font-size: 50px;
+    font-size: 58px;
   }
 
   p {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   /* index page */
@@ -337,6 +339,11 @@ button#restart {
     margin-inline: auto;
     width: 90%;
     margin-top: 1px;
+  }
+
+  #intro-container {
+    margin-top: 75px;
+    max-width: 720px;
   }
 
   button#start {
@@ -381,10 +388,6 @@ button#restart {
   a.result-restart {
     margin-top: 30px;
   }
-
-  p {
-    font-size: 20px;
-  }
 }
 
 /* media query: larger laptop screens (1440) */
@@ -395,17 +398,13 @@ button#restart {
     font-size: 60px;
   }
 
-  p {
-    font-size: 20px;
-  }
-
-  #intro-container>p {
-    font-size: 45px;
-  }
-
   /* index page */
   #header-container {
     margin-top: 13px;
+  }
+
+  #intro-container {
+    margin-top: 100px;
   }
 
   a.result-restart {
