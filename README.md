@@ -4,7 +4,7 @@ The ideal destination quiz suggests the perfect getaway for you based on your an
 
 The site is aimed at users of all ages for a fun experience to help identify a perfect vacation scenario based on popular holiday destinations.
 
-[View the site from here.]//insert weblink here//
+[View the site from here.](https://chandni-l5.github.io/ideal-destination/)
 
 //responsive mock-up//
 
@@ -78,40 +78,96 @@ All of the pages other than that primary introductory section contain a restart 
 
 ### 4.1 Languages Used
 
+- HTML 
+- CSS
+- JavaScript
+
 ### 4.2 Frameworks, Libraries & Programs Used
 
+- Balsamiq - to create wireframes
+- [Github](https://github.com/) - For version control and deployment
+- VS Code - used as the code editor and save files
+- [Google Fonts](https://fonts.google.com/) - to implement the fonts used in the site
+- [Font Awesome](https://fontawesome.com/) - for the start icon
+- Chrome dev tools - To test and troubleshoot various features and also test responsiveness of the pages.
+- [ChatGPT](https://chatgpt.com/) - to create the text and ai images which have been implemented on the results pages, and to help identify and trouble shoot the format and wording of the Javascript functions. 
+- [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js
+- [mdn](https://developer.mozilla.org/en-US/) - to research how to apply and implement JavaScript code and what tools would be ideal to be implemented in this project. 
+- [javascript.info](https://javascript.info/dom-nodes) - to research further into JavaScript and how to apply
+- [npmjs.com](https://www.npmjs.com/package/js-confetti) and [Youtube tutorial to add confetti with JavaScript](https://www.youtube.com/watch?v=tTIaA1Xmzmg) - to learn how to implement the confetti effect
+- [Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - use for inspiration of how to structure a quiz using all three types of languages
+- [befunky.com](https://www.befunky.com/dashboard/) - to edit and resize the images used in the site
+- [Free Convert](https://www.freeconvert.com/jpg-to-webp) - to convert images to different file types
+- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon
+-[Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
+
 ## 5. Deployment & Local Development
+
+The website is deployed using GitHub Pages. To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to GitHub.
+2. Go to the repository for this project - [Ideal Destination](https://chandni-l5.github.io/ideal-destination/)
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select 'Deploy from a branch' and in the branch dropdown select 'main' and press save.
+6. The site has now been deployed.
+7. When returning to the code page in the repository a Deployments section will appear in the right side column - this process may take a few minutes before the site goes live. The deployed sight can be accessed via this link.
 
 ## 6. Testing
 
 ### 6.1 Testing User Stories
 
-### 6.2 Fixing Bugs
+### 6.2 Accessibility
 
-### 6.3 Manual Testing
+### 6.3 Fixing Bugs
 
-### 6.4 Lighthouse
+### 6.4 Manual Testing
 
-### 6.5 Validation
+### 6.5 Lighthouse
 
-#### 6.5.1 W3C HTML and CSS
+### 6.6 Validation
 
-#### 6.5.2 Autoprefixer CSS
+#### 6.6.1 W3C HTML and CSS
 
-#### 6.5.3 JS jshint
+#### 6.6.2 Autoprefixer CSS
+
+#### 6.6.3 JS jshint
 
 ## 7. Credits
 
-[chatgpt.com](https://chatgpt.com/)
-[befunky.com](https://www.befunky.com/dashboard/)
-[coolers.co](https://coolors.co/)
-
 ### 7.1 Code Used
+- [Youtube tutorial to add confetti with JavaScript](https://www.youtube.com/watch?v=tTIaA1Xmzmg) - referred to in 4.2
+- [CodeHal Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - referred to in 4.2
 
 ### 7.2 Content
+- [chatgpt.com](https://chatgpt.com/)- referred to in 4.2
 
 ### 7.3 Media
+- [befunky.com](https://www.befunky.com/dashboard/)- referred to in 4.2
+- [coolers.co](https://coolors.co/)- to create the colour palette displayed in 2.2
+- [npmjs.com](https://www.npmjs.com/package/js-confetti) - referred to in 4.2
+- [Free Convert](https://www.freeconvert.com/jpg-to-webp) - - referred to in 4.2
+- [Favicon.io](https://favicon.io/emoji-favicons/) - referred to in 4.2
 
 ### 7.4 Documentation and Testing
+I have used the following sources to help guide and structure the documentation of this project.
+- [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js
+- [chatgpt.com](https://chatgpt.com/)
+- [The love running readme template](https://github.com/Code-Institute-Solutions/readme-template?tab=readme-ov-file) 
+- [A markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
+- [Kera Cudmore's readme template](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md) - shared on slack
+- [Diffchecker](https://www.diffchecker.com/)
+- [W3C](https://validator.w3.org/)
+-[Autoprefixer](https://autoprefixer.github.io/)
+- [Gyazo](https://gyazo.com/en) plugin- to create gifs to use in the testing documentation
+- [WebAIM](https://webaim.org/resources/contrastchecker/) - consider the accessibility and contrast
+- [Accessibility Checker](https://www.accessibilitychecker.org/audit/?website=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&flag=uk) - to test the accessibility of the site.
+- [Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
+
 
 ### 7.5 Acknowledgements
+I would like to acknowledge the following people who have helped me along the way in completion of this project. 
+
+- - Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site. 
+ - LanaD_5P and Ivan Kimpl - fellow students who supported me throughout this project and provided encouragement and advice. 
+ - Tom, Prash, Suraj, Anj and Nik - family and friends who helped to test out the site on various devices. 
