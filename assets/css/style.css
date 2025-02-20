@@ -16,7 +16,7 @@ body#home {
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .hide {
@@ -320,6 +320,11 @@ button#restart {
   p {
     font-size: 35px;
   }
+
+  /* results pages */
+  p.result {
+    font-size: 25px;
+  }
 }
 
 /*media query: laptop screens (1024)*/
@@ -379,14 +384,18 @@ button#restart {
     width: 100%;
   }
 
+  h1.result{
+    margin-top: 0;
+  }
+
   .img-container>div {
     display: flex;
     justify-content: space-around;
     gap: 10px;
   }
 
-  a.result-restart {
-    margin-top: 30px;
+  p.result {
+    font-size: 18px;
   }
 }
 
@@ -409,5 +418,10 @@ button#restart {
 
   a.result-restart {
     margin-top: 25px;
+  }
+  
+  /* results pages */
+  p.result {
+    font-size: 34px
   }
 }
