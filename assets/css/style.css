@@ -171,6 +171,26 @@ button#finish {
   border-radius: 20px;
 }
 
+#alert {
+  visibility: hidden;
+  background-color: #fff;
+  color: #0f574b;
+  text-align:center;
+  padding: 3px;
+  border: solid 1px #0f574b;
+  border-radius: 20px;
+  position: absolute;
+  font-size: 12px;
+  width: 181px;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+}
+
+button#next:hover #alert {
+  visibility: visible;
+}
+
 a#intro-restart {
   display: inline-block;
   background-color: #fff;
@@ -377,6 +397,14 @@ button#restart {
     font-size: 30px;
     width: 200px;
     height: 90px;
+  }
+
+  #alert {
+    bottom: 25px;
+    height: 80px;
+    padding-top: 16px;
+    font-size: 20px;
+    cursor: not-allowed;
   }
 
   /* Result pages */

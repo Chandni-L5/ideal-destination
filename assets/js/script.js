@@ -119,12 +119,15 @@ function loadQuestions(index) {
     options.innerHTML = optionText;
 };
 
+// disables the next button until a selection is made
 let selectedOption = null;
 nextButton.disabled = true;
 options.addEventListener('click', function (event) {
     const selected = event.target.closest('[data-option]');
     if (!selected) return;
 });
+
+
 
 // functionality to next button
 nextButton.onclick = () => {
@@ -207,4 +210,10 @@ options.addEventListener('click', function (event) {
     selected.classList.add('selected');
     selectedOption = selected.dataset.option;
     nextButton.disabled = false;
+
+    // hide the alert when an option is selected 
+    let alert = document.querySelector("#alert")
+    if (alert) {
+        alert.style.visibility = "hidden";
+    }
 });
