@@ -191,6 +191,9 @@ button#next:hover .alert {
   visibility: visible;
 }
 
+button#finish:hover .alert {
+  visibility: visible;
+}
 a#intro-restart {
   display: inline-block;
   background-color: #fff;
@@ -446,6 +449,12 @@ button#restart {
 
   a.result-restart {
     margin-top: 25px;
+  }
+
+  button#finish {
+    height: 95px;
+    width: 200px;
+    font-size: 30px;
   }
   
   /* results pages */

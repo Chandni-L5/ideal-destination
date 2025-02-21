@@ -51,14 +51,12 @@ I used Balsamiq to create wireframes to help me visualize the layout of the site
 
 The website consists of four different pages. The main page contains the introduction and quiz section. Once the finish button is selected at the end of the quiz the user is navigated to another page based on their results of the selections made when completing the quiz.
 
-When the index page initially loads, only the page heading, a section contain an introductory message and a start button.
+When the index page initially loads, only the page heading, a section contain an introductory message and a start button are displayed.
 ![Screenshot of the intro message](/documentation/intro-screenshot.webp)
 
-Once the start button is selected, the previous section is hidden and a new section is displayed which is the main quiz section. The first question is displayed with three selectable options displayed below. In addition there is another button which allows the user to move the the next question.
+Once the start button is selected, the intro section is hidden and a new section is displayed which is the main quiz section. The first question is displayed with three selectable options displayed below. In addition there is another button which allows the user to move the the next question. The next button is disabled until an option is selected. When the user hovers over or tries to select the next button a tooltip pops up to feedback to the user that an option must be selected first. In addition the cursor displays a no entry symbol. When an option is selected the next button becomes active and no longer displays a tooltip. In addition the cursor becomes a pointer to indicate the button is active.
 
-Feedback is provided to the user by the interactivity on the quiz section. When the options are hovered over there is an effect and once an option is selected this effect is applied to allow the selection to standout from the other options.
-
-The 'Next Question' button is disabled until a selection is made and the user can only move forward to the next question once a selection has been made. In addition the cursor becomes a pointer when hovering over anything selectable on the page.
+Additional feedback is provided to the user by the interactivity on the quiz section. When the options are hovered over there is an effect and once an option is selected this effect is applied to allow the selection to standout from the other options.
 
 Once you reach the final question the 'Next Question' button changes to the 'Finish' button.
 
