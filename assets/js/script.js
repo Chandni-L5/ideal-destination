@@ -127,8 +127,6 @@ options.addEventListener('click', function (event) {
     if (!selected) return;
 });
 
-
-
 // functionality to next button
 nextButton.onclick = () => {
     if (selectedOption) {
@@ -141,7 +139,7 @@ nextButton.onclick = () => {
 
             // replace the next button with the finish button
             let finishButton = document.createElement("button");
-            finishButton.textContent = "Finish"
+            finishButton.innerHTML = `Finish <span class="alert">Please choose an option first</span>`
             finishButton.id = "finish"
 
             //add new button
@@ -169,7 +167,7 @@ nextButton.onclick = () => {
                 }
             };
         } else {
-            nextButton.textContent = "Next Question";
+            nextButton.innerHTML = `Next Question <span class="alert">Please choose an option first</span>`;
         }
 
         // load the next q+a set
@@ -178,6 +176,12 @@ nextButton.onclick = () => {
         // disable next button until an option is selected
         selectedOption = null;
         nextButton.disabled = true;
+
+        // hide the tooltip .alert when the next button is enabled 
+        const alert = document.querySelector('.alert');
+        if (alert) {
+        document.style.visibility = 'hidden';
+        }
     }
 };
 
@@ -211,9 +215,9 @@ options.addEventListener('click', function (event) {
     selectedOption = selected.dataset.option;
     nextButton.disabled = false;
 
-    // hide the alert when an option is selected 
-    let alert = document.querySelector("#alert")
-    if (alert) {
-        alert.style.visibility = "hidden";
-    }
+        // Hide the alert when an option is selected 
+        const alert = document.querySelector('.alert');
+        if (alert) {
+            alert.style.visibility = "hidden";  // Hide the tooltip when an option is selected
+        }
 });
