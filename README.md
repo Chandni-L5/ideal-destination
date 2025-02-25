@@ -133,10 +133,16 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 
 [W3C](https://validator.w3.org/) validator has been used to check the HTML on each of the pages of the website and the css stylesheet.
 
-##### HTML - index.html 
-![screenshot of html validator results](/documentation/html-val-index.webp)
+##### HTML - [index.html](index.html)
+![screenshot of html validator results for the index page](/documentation/html-val-index.webp)
 
-[index.html](index.html) - The initial check highlighted a few issues wit the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
+ The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
+![screenshot of final html validator results](/documentation/html-val-index-2.webp)
+
+##### HTML - [japan.html](japan.html)
+![screenshot of html validator results for the japan page](/documentation/html-val-japan.webp)
+
+The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Japan result page has successfully passed the html validation. 
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 
