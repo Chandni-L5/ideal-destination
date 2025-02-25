@@ -2,24 +2,31 @@
 
 The ideal destination quiz suggests the perfect getaway for you based on your answers. Users answer a selection of questions and are finally introduced the the ideal destination package for a dream holiday.
 
-The site is aimed at users of all ages for a fun experience to help identify a perfect vacation scenario based on popular holiday destinations.
-
 [View the site from here.](https://chandni-l5.github.io/ideal-destination/)
 
-![screenshot to display the responsiveness of the site](//documentation/responsive.webp)
+![screenshot to display the responsiveness of the site](/documentation/responsive.webp)
 
 ## 1. User Experience
 
 The purpose of this website is to provide a fun and interactive quiz that helps the user determine their ideal travel destination based on their preferences. Based on the responses, it suggests a destination, type of accommodation and exciting activity.
 
-### 1.1 User Goals
+The site is aimed at users of all ages for a fun experience to help identify a perfect vacation scenario based on popular holiday destinations.
 
+### 1.1 User Stories
+
+#### Client Goals
 - To be able to view the site on a range of devices.
 - An easy-to-use format to proceed through the quiz.
+- Ability to clearly identify which option you have clicked on, and change selection before moving to the next question
+
+#### Returning Client Goals
 - Bright and engaging imagery without compromising visibility of the written content.
 - Ability to restart the quiz
 - Ability to feedback on future destination suggestions
-- Ability to clearly identify which option you have clicked on, and change selection before moving to the next question
+
+I have utilized the Projects function on my repository to keep track of the user stories that apply to this site. The user stories are recorded along with the acceptance criteria and tasks required to meet this goal. The stories are organized into sections of progress and allow me to keep track of where I am at throughout the development process.
+
+![screenshot of user stories](/documentation/user-stories.webp)
 
 ## 2. Design
 
@@ -118,7 +125,34 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 
 ### 6.1 Testing User Stories
 
+#### Client Goals
+##### Goal: To be able to view the site on a range of devices.
+Result- ✔ - The site is responsive on a number of browsers and devices.
+##### Goal: An easy-to-use format to proceed through the quiz.
+Result- ✔ - simple and clear format of how to step through each section and complete the quiz.
+##### Goal: Ability to clearly identify which option you have clicked on, and change selection before moving to the next question
+Result- ✔ - the selected option is highlighted and the option even expands subtly to clearly showcase the selection. The user also has the ability to change their selection before moving the the next question. 
+
+#### Returning Client Goals
+##### Goal: Bright and engaging imagery without compromising visibility of the written content.
+Result- ✔ - The site includes relevant images, following a similar colour theme and is bright and engaging. 
+
+##### Goal: Ability to restart the quiz 
+Result- ✔ - A clear and obvious restart button is visible throughout the quiz and also on the final result page which navigates the user back to the start. 
+
+##### Goal: Ability to feedback on future destination suggestions
+Result- ✘ - Due to time constraints I was unable to include a feedback function however on future implementations this is something that I would consider to include.
+
 ### 6.2 Accessibility
+During the designing and styling process of the website, I have kept in mind to aim to make the page as user friendly and accessible as possible. I have achieved this by:
+
+Semantic HTML -Use of descriptive alt attributes on the images used throughout the site. -I have checked the colour scheme used on the page using [WebAIM](https://webaim.org/resources/contrastchecker/) to check the colour contrast.
+
+I have also used the chrome extension Web Disability Simulator to also consider the visuals of the page and contrast between the content for users with visual impairments.
+
+A google font has been used on the site however I have also applied Sans-Serif as a font alternative.
+
+Finally, as displayed in the Lighthouse testing in section 6.5 below, the scores of accessibility are at 100% on all pages of the site.
 
 ### 6.3 Fixing Bugs
 
@@ -236,3 +270,4 @@ I would like to acknowledge the following people who have helped me along the wa
 - Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site.
 - LanaD_5P and Ivan Kimpl - fellow students who supported me throughout this project and provided encouragement and advice.
 - Tom, Prash, Suraj, Anj and Nik - family and friends who helped to test out the site on various devices.
+- Spencer_ci, Kera_Hackteam, Martin_alumni and Niclas_lead_Banana_code_Alumnus - who provided support and assistance on slack.
