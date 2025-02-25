@@ -151,6 +151,11 @@ The initial check highlighted a few issues with the code. These issues have now 
 The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Kenya result page has successfully passed the html validation. 
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
+##### HTML - [barbados.html](barbados.html)
+![screenshot of final html validator results](/documentation/html-val-index-2.webp)
+
+The initial check did not highlight any issues with the code on the Barbados result page.
+
 #### 6.6.2 Autoprefixer CSS
 
 #### 6.6.3 JS jshint
