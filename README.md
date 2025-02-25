@@ -123,8 +123,15 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 ### 6.3 Fixing Bugs
 
 ### 6.4 Manual Testing
+Manual testing has taken place constantly throughout the production of this product.
 
 ### 6.5 Lighthouse
+
+Please select this [link](lighthouse.md) to view screenshots of the lighthouse analysis.
+
+The main issues identified across the site were in relation to the speed at which the page and content loads and issues with cumulative layout shifts and image sizing. I implemented some changes by preloading some of the external content as the page loads and adding a height to the `<img>` tag in CSS.
+
+On checking the site through lighthouse after the changes were made, this improved the scores greatly.
 
 ### 6.6 Validation
 
