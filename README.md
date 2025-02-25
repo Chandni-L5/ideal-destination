@@ -145,6 +145,11 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Japan result page has successfully passed the html validation. 
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
+##### HTML - [kenya.html](kenya.html)
+![screenshot of html validator results for the kenya page](/documentation/html-val-kenya.webp)
+
+The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Kenya result page has successfully passed the html validation. 
+![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 #### 6.6.2 Autoprefixer CSS
 
