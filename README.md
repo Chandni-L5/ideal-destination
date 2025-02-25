@@ -6,7 +6,7 @@ The site is aimed at users of all ages for a fun experience to help identify a p
 
 [View the site from here.](https://chandni-l5.github.io/ideal-destination/)
 
-//responsive mock-up//
+![screenshot to display the responsiveness of the site](//documentation/responsive.webp)
 
 ## 1. User Experience
 
@@ -52,6 +52,7 @@ I used Balsamiq to create wireframes to help me visualize the layout of the site
 The website consists of four different pages. The main page contains the introduction and quiz section. Once the finish button is selected at the end of the quiz the user is navigated to another page based on their results of the selections made when completing the quiz.
 
 When the index page initially loads, only the page heading, a section contain an introductory message and a start button are displayed.
+
 ![Screenshot of the intro message](/documentation/intro-screenshot.webp)
 
 Once the start button is selected, the intro section is hidden and a new section is displayed which is the main quiz section. The first question is displayed with three selectable options displayed below. In addition there is another button which allows the user to move the the next question. The next button is disabled until an option is selected. When the user hovers over or tries to select the next button a tooltip pops up to feedback to the user that an option must be selected first. In addition the cursor displays a no entry symbol. When an option is selected the next button becomes active and no longer displays a tooltip. In addition the cursor becomes a pointer to indicate the button is active.
@@ -129,6 +130,15 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 ### 6.6 Validation
 
 #### 6.6.1 W3C HTML and CSS
+
+[W3C](https://validator.w3.org/) validator has been used to check the HTML on each of the pages of the website and the css stylesheet.
+
+##### HTML - index.html 
+![screenshot of html validator results](/documentation/html-val-index.webp)
+
+[index.html](index.html) - The initial check highlighted a few issues wit the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
+![screenshot of final html validator results](/documentation/html-val-index-2.webp)
+
 
 #### 6.6.2 Autoprefixer CSS
 
