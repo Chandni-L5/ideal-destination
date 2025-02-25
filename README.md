@@ -123,7 +123,20 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 ### 6.3 Fixing Bugs
 
 ### 6.4 Manual Testing
-Manual testing has taken place constantly throughout the production of this product.
+Full testing has been completed on the following devices: 
+* Laptop: Macbook Air M3 2024
+* Mobile: Iphone 15
+
+The browsers used to test the site include: 
+* Google Chrome
+* Safari
+* Mozilla Firefox
+
+![table showing manual testing](/documentation/manual-testing.png)
+
+All of the manual testing yielded a positive result. During the development process, manual testing was ongoing, especially whilst building the JavaScript code as it was essential to ensure the functions being applied were working correctly and as expected. Chrome dev tools was used in this process, particularly the Console tool to identify any errors that were occurring in JavaScript and also using the AI assistance to identify how to resolve the issue.
+
+The site was also tested by numerous friends and family members who confirmed that the site was functioning as expected and they had a positive experience. 
 
 ### 6.5 Lighthouse
 
@@ -220,6 +233,6 @@ I have used the following sources to help guide and structure the documentation 
 
 I would like to acknowledge the following people who have helped me along the way in completion of this project.
 
-- - Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site.
+- Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site.
 - LanaD_5P and Ivan Kimpl - fellow students who supported me throughout this project and provided encouragement and advice.
 - Tom, Prash, Suraj, Anj and Nik - family and friends who helped to test out the site on various devices.
