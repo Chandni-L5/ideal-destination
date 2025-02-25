@@ -121,7 +121,7 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 6. The site has now been deployed.
 7. When returning to the code page in the repository a Deployments section will appear in the right side column - this process may take a few minutes before the site goes live. The deployed sight can be accessed via this link.
 
-## 6. Testing
+## 6. Testing and Bug Fixing
 
 ### 6.1 Testing User Stories
 
@@ -155,6 +155,37 @@ A google font has been used on the site however I have also applied Sans-Serif a
 Finally, as displayed in the Lighthouse testing in section 6.5 below, the scores of accessibility are at 100% on all pages of the site.
 
 ### 6.3 Fixing Bugs
+
+A number of issues have occurred during the development process of the site. 
+
+#### Hiding and showing sections when required 
+When I initially planned the quiz I wanted the introduction section to appear initially and then once the quiz starts the intro section would be hidden and the quiz section would appear. I was unsure of how to make this process occur and so I carried out some research to try and learn how to create this functionality. 
+
+ Initially I followed [CodeHal Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA), by creating 2 sections of the index page and swapping out sides of the page when required using CSS. 
+ 
+ However when testing the responsiveness of the site it became evident that this was creating issues with the layout of the background and creating additional white space. In addition when trying to add buttons on the page it was difficult to position due to these settings. I discussed this issue with my mentor Moritz and we identified that the issue was created by the split of the page. 
+
+ Instead he advised to used the hidden styling and create a JavaScript function to hide and display the relevant sections at the relevant time. This was implemented using the query selector and adding an id to the relevant sections. This effectively allowed the site to function as I initially planned. 
+
+ #### Page Loading and Unused JS 
+ The JavaScript used on the index page and the JavaScript used on the results page run completely independently. When initially starting the projecting, all of the JS script was on a single page, however this created some issues with functionality and loading speed. 
+
+ As the separate pages used the JS independently, it was not necessary for it all to be contained in a single js file and so two separate js files were created and the relevant one is linked on the relevant html page. This helped to improve the page load speed and functionality of the site. 
+
+ #### Disabling the next/final button and tooltip
+ I decided to add steps within the quiz to disable to next and finish button until an answer/option has been selected. This is because the initial functionality allowed the user to skip a question and this would affect the final result and not provide an accurate result. 
+
+ I initially set the button to inactive using CSS. Then I created a JS function to make the button active once an option has been selected. To build on this I also added a cursor pointer to show a no entry symbol when the button is disabled and to change to a pointer once an option has been selected. This is to indicate when the button is available for use. 
+
+ On reflection although the cursor pointers provide an element of feedback to the user as to when the button functionality is active, I felt that some more clear guidance was required. I decided to add a tooltip function so that when the button is selected or hovered over without an option selected the tooltip alert would appear and alert the user that they need to make an option selection first. I used JS code to ensure that this alert is only visible when an option has not been selected.
+ ![gif of the hover effect showing the tooltip and no entry pointer](/documentation/hover.gif)
+
+ #### Creating the calculation to randomize the result in the event of a tie.
+ After I created the calculation to push the relevant html page based on the results of the quiz, I identified that I needed a function to run in the event that there was a tie in the answers. I used the material from the JavaScript Data Types Modules to understand what features I might need to use however I struggled to create anything myself. 
+
+ I reached out to other students in slack to see if anyone could make any suggestions of how this functionality could be achieved however was unable to get an answer through this format. I studied slack overflow and MDN webdocs and attempted various formats to implement this function. Finally i entered the initial calculation in chatGPT and requested it to consider additional calculations to help randomize a result. This helped me to create the specific calculation to randomize a result. 
+
+ ![screenshot of the section of JS displaying the calculation](/documentation/random-calculation.png)
 
 ### 6.4 Manual Testing
 Full testing has been completed on the following devices: 
