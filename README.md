@@ -156,6 +156,10 @@ The initial check highlighted a few issues with the code. These issues have now 
 
 The initial check did not highlight any issues with the code on the Barbados result page.
 
+##### CSS Stylesheet
+Please view this [link](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&usermedium=all&vextwarning=&warning=1
+) to see the results of the CSS validation which has passed checks. Although there are 2 warning messages shown no further action is required as these are related to shortfalls of certain browsers.
+
 #### 6.6.2 Autoprefixer CSS
 
 #### 6.6.3 JS jshint
