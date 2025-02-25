@@ -68,7 +68,7 @@ Once you reach the final question the 'Next Question' button changes to the 'Fin
 
 After the last question is answered and 'Finish' is selected, the user is navigated to a different html page which contains the result of the quiz. The Javascript in the background calculates which option has been selected most frequently to provide a result. In the event of a tie the result is randomized between the two most popular options selected.
 
-An additional effect is applied once the result page is loaded to celebrate the result. The confetti function has been customized to throw out themed emoji's based on the winning destination. 
+An additional effect is applied once the result page is loaded to celebrate the result. The confetti function has been customized to throw out themed emoji's based on the winning destination.
 
 ![gif of kenya.html](/documentation/kenya-gif.gif)
 ![gif of japan.html](/documentation/japan-gif.gif)
@@ -80,7 +80,7 @@ All of the pages other than that primary introductory section contain a restart 
 
 ### 4.1 Languages Used
 
-- HTML 
+- HTML
 - CSS
 - JavaScript
 
@@ -92,16 +92,15 @@ All of the pages other than that primary introductory section contain a restart 
 - [Google Fonts](https://fonts.google.com/) - to implement the fonts used in the site
 - [Font Awesome](https://fontawesome.com/) - for the start icon
 - Chrome dev tools - To test and troubleshoot various features and also test responsiveness of the pages.
-- [ChatGPT](https://chatgpt.com/) - to create the text and ai images which have been implemented on the results pages, and to help identify and trouble shoot the format and wording of the Javascript functions. 
+- [ChatGPT](https://chatgpt.com/) - to create the text and ai images which have been implemented on the results pages, and to help identify and trouble shoot the format and wording of the Javascript functions.
 - [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js
-- [mdn](https://developer.mozilla.org/en-US/) - to research how to apply and implement JavaScript code and what tools would be ideal to be implemented in this project. 
+- [mdn](https://developer.mozilla.org/en-US/) - to research how to apply and implement JavaScript code and what tools would be ideal to be implemented in this project.
 - [javascript.info](https://javascript.info/dom-nodes) - to research further into JavaScript and how to apply
 - [npmjs.com](https://www.npmjs.com/package/js-confetti) and [Youtube tutorial to add confetti with JavaScript](https://www.youtube.com/watch?v=tTIaA1Xmzmg) - to learn how to implement the confetti effect
 - [Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - use for inspiration of how to structure a quiz using all three types of languages
 - [befunky.com](https://www.befunky.com/dashboard/) - to edit and resize the images used in the site
 - [Free Convert](https://www.freeconvert.com/jpg-to-webp) - to convert images to different file types
-- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon
--[Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
+- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon -[Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
 
 ## 5. Deployment & Local Development
 
@@ -134,31 +133,35 @@ The website is deployed using GitHub Pages. To Deploy the site using GitHub Page
 [W3C](https://validator.w3.org/) validator has been used to check the HTML on each of the pages of the website and the css stylesheet.
 
 ##### HTML - [index.html](index.html)
+
 ![screenshot of html validator results for the index page](/documentation/html-val-index.webp)
 
- The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
+The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the homepage has successfully passed the html validation.
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 ##### HTML - [japan.html](japan.html)
+
 ![screenshot of html validator results for the japan page](/documentation/html-val-japan.webp)
 
-The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Japan result page has successfully passed the html validation. 
+The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Japan result page has successfully passed the html validation.
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 ##### HTML - [kenya.html](kenya.html)
+
 ![screenshot of html validator results for the kenya page](/documentation/html-val-kenya.webp)
 
-The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Kenya result page has successfully passed the html validation. 
+The initial check highlighted a few issues with the code. These issues have now been addressed and all of the html code on the Kenya result page has successfully passed the html validation.
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 ##### HTML - [barbados.html](barbados.html)
+
 ![screenshot of final html validator results](/documentation/html-val-index-2.webp)
 
 The initial check did not highlight any issues with the code on the Barbados result page.
 
 ##### CSS Stylesheet
-Please view this [link](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&usermedium=all&vextwarning=&warning=1
-) to see the results of the CSS validation which has passed checks. Although there are 2 warning messages shown no further action is required as these are related to shortfalls of certain browsers.
+
+Please view this [link](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&usermedium=all&vextwarning=&warning=1) to see the results of the CSS validation which has passed checks. Although there are 2 warning messages shown no further action is required as these are related to shortfalls of certain browsers.
 
 #### 6.6.2 Autoprefixer CSS
 
@@ -166,20 +169,24 @@ I have used [Autoprefixer](https://autoprefixer.githib.io) to add vendor prefixe
 
 #### 6.6.3 JS jshint
 
-The JavaScript code has been validated through [Jshint](https://jshint.com/). Both script sheets have been checked and no amendment is required. The second script does identify an undefined variable however the confetti effect used on the result pages has been implemented through a JS library and so the variable defined is linked on the html page before the closing tag for </body>
+The JavaScript code has been validated through [Jshint](https://jshint.com/). Both script sheets have been checked and no amendment is required. The second script does identify an undefined variable however the confetti effect used on the result pages has been implemented through a JS library and so the variable defined is linked on the html page before the closing tag for `</body>` on the result html pages.
 
 ![result of running script.js through JShint](/documentation/jshint-js.webp)
 ![result of running script2.js through Jshint](/documentation/jshint-js2.webp)
+
 ## 7. Credits
 
 ### 7.1 Code Used
+
 - [Youtube tutorial to add confetti with JavaScript](https://www.youtube.com/watch?v=tTIaA1Xmzmg) - referred to in 4.2
 - [CodeHal Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - referred to in 4.2
 
 ### 7.2 Content
+
 - [chatgpt.com](https://chatgpt.com/)- referred to in 4.2
 
 ### 7.3 Media
+
 - [befunky.com](https://www.befunky.com/dashboard/)- referred to in 4.2
 - [coolers.co](https://coolors.co/)- to create the colour palette displayed in 2.2
 - [npmjs.com](https://www.npmjs.com/package/js-confetti) - referred to in 4.2
@@ -187,24 +194,25 @@ The JavaScript code has been validated through [Jshint](https://jshint.com/). Bo
 - [Favicon.io](https://favicon.io/emoji-favicons/) - referred to in 4.2
 
 ### 7.4 Documentation and Testing
+
 I have used the following sources to help guide and structure the documentation of this project.
+
 - [JavaScript compiler](https://pythontutor.com/javascript.html#mode=edit) - to test the JavaScript code and functions before applying to script.js
 - [chatgpt.com](https://chatgpt.com/)
-- [The love running readme template](https://github.com/Code-Institute-Solutions/readme-template?tab=readme-ov-file) 
+- [The love running readme template](https://github.com/Code-Institute-Solutions/readme-template?tab=readme-ov-file)
 - [A markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables)
 - [Kera Cudmore's readme template](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md) - shared on slack
 - [Diffchecker](https://www.diffchecker.com/)
-- [W3C](https://validator.w3.org/)
--[Autoprefixer](https://autoprefixer.github.io/)
+- [W3C](https://validator.w3.org/) -[Autoprefixer](https://autoprefixer.github.io/)
 - [Gyazo](https://gyazo.com/en) plugin- to create gifs to use in the testing documentation
 - [WebAIM](https://webaim.org/resources/contrastchecker/) - consider the accessibility and contrast
 - [Accessibility Checker](https://www.accessibilitychecker.org/audit/?website=https%3A%2F%2Fchandni-l5.github.io%2Fideal-destination%2F&flag=uk) - to test the accessibility of the site.
 - [Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
 
-
 ### 7.5 Acknowledgements
-I would like to acknowledge the following people who have helped me along the way in completion of this project. 
 
-- - Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site. 
- - LanaD_5P and Ivan Kimpl - fellow students who supported me throughout this project and provided encouragement and advice. 
- - Tom, Prash, Suraj, Anj and Nik - family and friends who helped to test out the site on various devices. 
+I would like to acknowledge the following people who have helped me along the way in completion of this project.
+
+- - Moritz Wach - my Code Institute Mentor who made himself available when I needed support and provided excellent feedback to improve the functionality of my site.
+- LanaD_5P and Ivan Kimpl - fellow students who supported me throughout this project and provided encouragement and advice.
+- Tom, Prash, Suraj, Anj and Nik - family and friends who helped to test out the site on various devices.

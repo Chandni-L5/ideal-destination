@@ -175,7 +175,7 @@ button#finish {
   visibility: hidden;
   background-color: #fff;
   color: #0f574b;
-  text-align:center;
+  text-align: center;
   padding: 3px;
   border: solid 1px #0f574b;
   border-radius: 20px;
@@ -257,6 +257,8 @@ p.result {
 
 img {
   width: 75%;
+  height: auto;
+  height: auto;
   display: block;
   margin: 0 auto;
   margin-top: 10px;
@@ -315,7 +317,6 @@ button#restart {
 
 /* media query: ipad (768px) */
 @media screen and (min-width: 768px) {
-
   /* intro section */
   #header-container {
     margin-top: 25px;
@@ -352,7 +353,6 @@ button#restart {
 
 /*media query: laptop screens (1024)*/
 @media screen and (min-width: 1024px) {
-
   /* global */
   h1 {
     font-size: 58px;
@@ -413,13 +413,14 @@ button#restart {
   /* Result pages */
   img {
     width: 100%;
+    height: auto;
   }
 
-  h1.result{
+  h1.result {
     margin-top: 0;
   }
 
-  .img-container>div {
+  .img-container > div {
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -432,7 +433,6 @@ button#restart {
 
 /* media query: larger laptop screens (1440) */
 @media screen and (min-width: 1440px) {
-
   /* global */
   h1 {
     font-size: 60px;
@@ -456,9 +456,9 @@ button#restart {
     width: 200px;
     font-size: 30px;
   }
-  
+
   /* results pages */
   p.result {
-    font-size: 34px
+    font-size: 34px;
   }
 }

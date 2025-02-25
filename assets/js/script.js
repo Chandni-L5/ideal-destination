@@ -186,11 +186,11 @@ nextButton.onclick = () => {
     selectedOption = null;
     nextButton.disabled = true;
 
-  //   // hide the tooltip .alert when the next button is enabled
-  //   const alert = document.querySelector(".alert");
-  //   if (alert) {
-  //     document.style.visibility = "hidden";
-  //   }
+    //   // hide the tooltip .alert when the next button is enabled
+    //   const alert = document.querySelector(".alert");
+    //   if (alert) {
+    //     document.style.visibility = "hidden";
+    //   }
   }
 };
 

@@ -3,20 +3,25 @@
 const jsConfetti = new JSConfetti();
 
 document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
 
-    const currentPage = window.location.pathname.split("/").pop(); 
-
-    if (currentPage === "barbados.html") {
-        jsConfetti.addConfetti({
-            emojis: ['🏝️', '☀️', '👙', '🏖️'],
-        }).then(() => jsConfetti.addConfetti());
-    } else if (currentPage === "japan.html") {
-        jsConfetti.addConfetti({
-            emojis: ['🍡', '🌸', '🍣', '🍥'],
-        }).then(() => jsConfetti.addConfetti());
-    } else if (currentPage === "kenya.html") {
-        jsConfetti.addConfetti({
-            emojis: ['🦁', '🐘', '🦓', '☀️'],
-        }).then(() => jsConfetti.addConfetti());
-}
+  if (currentPage === "barbados.html") {
+    jsConfetti
+      .addConfetti({
+        emojis: ["🏝️", "☀️", "👙", "🏖️"],
+      })
+      .then(() => jsConfetti.addConfetti());
+  } else if (currentPage === "japan.html") {
+    jsConfetti
+      .addConfetti({
+        emojis: ["🍡", "🌸", "🍣", "🍥"],
+      })
+      .then(() => jsConfetti.addConfetti());
+  } else if (currentPage === "kenya.html") {
+    jsConfetti
+      .addConfetti({
+        emojis: ["🦁", "🐘", "🦓", "☀️"],
+      })
+      .then(() => jsConfetti.addConfetti());
+  }
 });
