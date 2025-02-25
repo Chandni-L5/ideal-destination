@@ -162,8 +162,14 @@ Please view this [link](http://jigsaw.w3.org/css-validator/validator?lang=en&pro
 
 #### 6.6.2 Autoprefixer CSS
 
+I have used [Autoprefixer](https://autoprefixer.githib.io) to add vendor prefixes to the CSS.
+
 #### 6.6.3 JS jshint
 
+The JavaScript code has been validated through [Jshint](https://jshint.com/). Both script sheets have been checked and no amendment is required. The second script does identify an undefined variable however the confetti effect used on the result pages has been implemented through a JS library and so the variable defined is linked on the html page before the closing tag for </body>
+
+![result of running script.js through JShint](/documentation/jshint-js.webp)
+![result of running script2.js through Jshint](/documentation/jshint-js2.webp)
 ## 7. Credits
 
 ### 7.1 Code Used

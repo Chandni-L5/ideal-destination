@@ -235,4 +235,4 @@ options.addEventListener("click", function (event) {
   if (alert) {
     alert.style.visibility = "hidden"; // Hide the tooltip when an option is selected
   }
-})
+});
