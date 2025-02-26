@@ -10,7 +10,6 @@
 
 body#home {
   background-color: #fff;
-  overflow: hidden;
   background: url("../images/background.webp") no-repeat center;
   background-size: cover;
 }

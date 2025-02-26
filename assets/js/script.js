@@ -185,12 +185,6 @@ nextButton.onclick = () => {
     // disable next button until an option is selected
     selectedOption = null;
     nextButton.disabled = true;
-
-    //   // hide the tooltip .alert when the next button is enabled
-    //   const alert = document.querySelector(".alert");
-    //   if (alert) {
-    //     document.style.visibility = "hidden";
-    //   }
   }
 };
 

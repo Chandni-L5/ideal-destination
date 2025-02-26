@@ -107,7 +107,8 @@ All of the pages other than that primary introductory section contain a restart 
 - [Youtube tutorial](https://www.youtube.com/watch?v=Vp8x8-reqZA) - use for inspiration of how to structure a quiz using all three types of languages
 - [befunky.com](https://www.befunky.com/dashboard/) - to edit and resize the images used in the site
 - [Free Convert](https://www.freeconvert.com/jpg-to-webp) - to convert images to different file types
-- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon -[Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
+- [Favicon.io](https://favicon.io/emoji-favicons/) - to create an emoji favicon 
+- [Amiresponsive](https://ui.dev/amiresponsive) - to show the website on a range of device screens
 
 ## 5. Deployment & Local Development
 
