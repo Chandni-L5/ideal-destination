@@ -193,6 +193,7 @@ button#next:hover .alert {
 button#finish:hover .alert {
   visibility: visible;
 }
+
 a#intro-restart {
   display: inline-block;
   background-color: #fff;
@@ -316,6 +317,7 @@ button#restart {
 
 /* media query: ipad (768px) */
 @media screen and (min-width: 768px) {
+
   /* intro section */
   #header-container {
     margin-top: 25px;
@@ -352,6 +354,7 @@ button#restart {
 
 /*media query: laptop screens (1024)*/
 @media screen and (min-width: 1024px) {
+
   /* global */
   h1 {
     font-size: 58px;
@@ -419,7 +422,7 @@ button#restart {
     margin-top: 0;
   }
 
-  .img-container > div {
+  .img-container>div {
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -432,6 +435,7 @@ button#restart {
 
 /* media query: larger laptop screens (1440) */
 @media screen and (min-width: 1440px) {
+
   /* global */
   h1 {
     font-size: 60px;

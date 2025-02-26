@@ -1,6 +1,5 @@
 // Question and number object and nested options object
-let quizQAndO = [
-  {
+let quizQAndO = [{
     number: 1,
     question: "What is your ideal type of holiday?",
     option: {
@@ -56,8 +55,7 @@ let quizQAndO = [
   },
   {
     number: 7,
-    question:
-      "If you close your eyes, what would you like to hear on your ideal holiday?",
+    question: "If you close your eyes, what would you like to hear on your ideal holiday?",
     option: {
       a: "Waves crashing on the beach",
       b: "The hustle and bustle of a city",
